@@ -1,5 +1,6 @@
 package com.augmentis.ayp.calculator;
 
+import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -62,6 +63,27 @@ public class CalculatorActivity extends AppCompatActivity {
 
         textInput = (TextView) findViewById(R.id.input);
         textResult = (TextView) findViewById(R.id.output);
+
+        Typeface typeFace=Typeface.createFromAsset(getAssets(),"fonts/Kunlasatri.ttf");
+
+        textInput.setTypeface(typeFace);
+        textResult.setTypeface(typeFace);
+        buttonZero.setTypeface(typeFace);
+        buttonOne.setTypeface(typeFace);
+        buttonTwo.setTypeface(typeFace);
+        buttonThree.setTypeface(typeFace);
+        buttonFour.setTypeface(typeFace);
+        buttonFive.setTypeface(typeFace);
+        buttonSix.setTypeface(typeFace);
+        buttonSeven.setTypeface(typeFace);
+        buttonEight.setTypeface(typeFace);
+        buttonNine.setTypeface(typeFace);
+        buttonPlus.setTypeface(typeFace);
+        buttonMinus.setTypeface(typeFace);
+        buttonMulti.setTypeface(typeFace);
+        buttonDivide.setTypeface(typeFace);
+        buttonResult.setTypeface(typeFace);
+        buttonClear.setTypeface(typeFace);
 
         textInput.setText("0");
         textResult.setText("");

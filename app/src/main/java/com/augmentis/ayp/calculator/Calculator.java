@@ -37,4 +37,8 @@ public class Calculator {
     public float getResult() {
         return result;
     }
+
+    public void setResult(float result) {
+        this.result = result;
+    }
 }
